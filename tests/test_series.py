@@ -45,3 +45,22 @@ def test_zero_lucas():
    actual = lucas(0)
    expected = 0
    assert actual == expected
+
+
+# sum_series tests
+def test_sum_series_one():
+    actual = sum_series(1)
+    expected = 1
+    assert actual == expected
+
+
+def test_sum_series_two():
+    actual = sum_series(2)
+    expected = 1
+    assert actual == expected
+
+
+def test_sum_series_six():
+    actual = sum_series(6)
+    expected = 8
+    assert actual == expected
