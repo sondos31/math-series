@@ -1,11 +1,47 @@
-import math-series
-import test_series
-#fibunaccie test
-   def test_fib_zero():
-   def test_fib_one():
+from math_series.series import lucas,fibonacci,sum_series
 
 
-   def test_fib_two():
-   def test_fib_three():
-   def test_fib_four():
-   #return
+#fibonacci
+
+def test_one_fibonacci():
+    actual = fibonacci(1)
+    expected =1
+    assert actual == expected
+
+
+def test_zero_fibonacci():
+   actual = fibonacci(0)
+   expected = 0
+   assert actual == expected
+
+def test_fibonacci_negative():
+       actual = fibonacci(-1)
+       expected = 'Enter a number above zero pls'
+       assert actual == expected
+
+def test_fibonacci_strings():
+    actual = fibonacci("AAAAA")
+    expected = 'Enter a number please'
+    assert actual == expected
+
+# lucas.
+def test_lucas_one():
+    actual = lucas(1)
+    expected = 1
+    assert actual == expected
+
+
+def test_lucas_negative():
+    actual = lucas(-1)
+    expected = 'Enter a number above zero pls'
+    assert actual == expected
+
+def test_lucas_strings():
+        actual = lucas("AAAAA")
+        expected = 'Enter a number please'
+        assert actual == expected
+
+def test_zero_lucas():
+   actual = lucas(0)
+   expected = 0
+   assert actual == expected
